@@ -5,7 +5,7 @@ public class DeclarationApp {
 	public static void main(String[] args) {
 		byte a = 1;
 		short b = 1200;
-		int c = 100000;
+		int c = 053;
 		long d = 5000000000L;
 		
 		float e = 1.8F;
