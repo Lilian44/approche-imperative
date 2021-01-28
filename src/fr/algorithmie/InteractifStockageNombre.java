@@ -17,7 +17,7 @@ public class InteractifStockageNombre {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] array = new int[2];
+		int[] array = {1,2};
 		System.out.println("1) Option 1\n2) Option 2\n");
 		System.out.print("Selection: ");
 
@@ -32,17 +32,16 @@ public class InteractifStockageNombre {
 			Scanner myNbr = new Scanner(System.in);
 			int nbr = in.nextInt();
 			for (int i = 0; i < array.length - 1; i++) {
-				if (i <= array.length) {
-
-					if (array[i] == 0) {
+		
+					if (array[i] == 0 ) {
 						array[i] = nbr;
 						break;
-					} else {
+					} else if(array[array.length-1]!=0) {
 						array = Arrays.copyOf(array, array.length + 1);
-						array[i] = nbr;
+						array[i+2] = nbr;
 						break;
 					}
-				}
+				
 			}
 			System.out.println(Arrays.toString(array));
 			break;
