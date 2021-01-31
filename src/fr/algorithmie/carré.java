@@ -8,7 +8,6 @@ package fr.algorithmie;
  *
  */
 public class carré {
-
 	/**
 	 * @param args
 	 */
